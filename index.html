@@ -68,7 +68,7 @@
           Menu <span aria-hidden="true">＋</span>
         </button>
         <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-          <a href="#research">Research</a
+          <a href="#research">Research</a><a href="#research-in-progress">In progress</a
           ><a href="#publications">Publications</a
           ><a href="#software">Software</a><a href="#about">About</a>
           <a class="nav-contact" href="#contact"
@@ -317,6 +317,185 @@
       </section>
 
       <section
+        id="research-in-progress"
+        class="section container progress-section"
+        aria-labelledby="progress-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / Ongoing research</p>
+            <h2 id="progress-title">Research in progress.</h2>
+          </div>
+          <p class="section-intro">
+            Exploring contact dynamics, adaptive control and robot design.
+            These clips show preliminary results in simulation.
+          </p>
+        </div>
+
+        <article class="research-feature">
+          <div class="progress-media">
+            <figure class="research-image experiment-loop progress-clip progress-comparison">
+              <video
+                class="loop-video"
+                src="assets/videos/adaptive-mpc-payload.mp4"
+                data-loop-label="adaptive MPC payload comparison"
+                poster="assets/images/adaptive-mpc-payload-poster.jpg"
+                width="1920"
+                height="640"
+                muted
+                loop
+                playsinline
+                preload="none"
+                aria-label="Simulation comparing a fixed controller on the left and an adaptive controller on the right as an off-centre payload becomes heavier"
+              ></video>
+              <figcaption class="loop-toolbar">
+                <span class="clip-description">
+                  <strong>Changing payload</strong>
+                  <span>Simulation · 0.5× playback</span>
+                </span>
+                <button class="loop-toggle" type="button" aria-label="Play adaptive MPC payload comparison">
+                  <span class="loop-icon" aria-hidden="true">▶</span>
+                  <span class="loop-action">Play clip</span>
+                </button>
+              </figcaption>
+            </figure>
+            <figure class="research-image experiment-loop progress-clip progress-comparison">
+              <video
+                class="loop-video"
+                src="assets/videos/adaptive-mpc-friction.mp4"
+                data-loop-label="adaptive MPC ground friction comparison"
+                poster="assets/images/adaptive-mpc-friction-poster.jpg"
+                width="1920"
+                height="640"
+                muted
+                loop
+                playsinline
+                preload="none"
+                aria-label="Simulation comparing a fixed controller on the left and an adaptive controller on the right as the ground becomes more slippery"
+              ></video>
+              <figcaption class="loop-toolbar">
+                <span class="clip-description">
+                  <strong>Changing ground friction</strong>
+                  <span>Simulation · 0.5× playback</span>
+                </span>
+                <button class="loop-toggle" type="button" aria-label="Play adaptive MPC ground friction comparison">
+                  <span class="loop-icon" aria-hidden="true">▶</span>
+                  <span class="loop-action">Play clip</span>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">Adaptive MPC</span>
+              <span class="venue-note">Work in progress</span>
+            </p>
+            <h3>Adapting as the robot’s world changes.</h3>
+            <p>
+              A changing load or slippery ground can make a familiar movement
+              much harder. This research explores how adaptive control can help
+              a robot maintain its balance and follow its intended motion as
+              those conditions change.
+            </p>
+            <p>
+              The clips compare a fixed controller on the left with an adaptive
+              controller on the right. The first shows a heavier, off-centre
+              payload; the second shows reduced ground friction.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-feature research-feature-reverse">
+          <figure class="research-image experiment-loop progress-clip">
+            <video
+              class="loop-video"
+              src="assets/videos/allegro-cube-turn.mp4"
+              data-loop-label="Allegro hand cube reorientation"
+              poster="assets/images/allegro-cube-turn-poster.jpg"
+              width="1280"
+              height="720"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Slow-motion simulation of an Allegro robot hand turning a coloured cube through 180 degrees"
+            ></video>
+            <figcaption class="loop-toolbar">
+              <span class="clip-description">
+                <strong>Allegro hand · 180° cube turn</strong>
+                <span>Simulation · 0.2× playback</span>
+              </span>
+              <button class="loop-toggle" type="button" aria-label="Play Allegro hand cube reorientation">
+                <span class="loop-icon" aria-hidden="true">▶</span>
+                <span class="loop-action">Play clip</span>
+              </button>
+            </figcaption>
+          </figure>
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">Differentiable simulation</span>
+              <span class="venue-note">Work in progress</span>
+            </p>
+            <h3>Exploring dexterous contact.</h3>
+            <p>
+              Dexterous manipulation depends on many small contacts between a
+              hand and an object. This research explores contact dynamics for
+              planning and understanding complex robot motion.
+            </p>
+            <p>
+              Here, a simulated Allegro hand turns a cube through 180° while
+              keeping it close to its starting position. The slowed playback
+              makes the coordinated finger and object motion easier to see.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-feature">
+          <figure class="research-image experiment-loop progress-clip">
+            <video
+              class="loop-video"
+              src="assets/videos/kangaroo-codesign-walking.mp4"
+              data-loop-label="co-designed Kangaroo walking"
+              poster="assets/images/kangaroo-codesign-walking-poster.jpg"
+              width="1280"
+              height="720"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Simulation of the optimised Kangaroo robot model taking steps, showing its articulated leg mechanisms"
+            ></video>
+            <figcaption class="loop-toolbar">
+              <span class="clip-description">
+                <strong>Co-designed Kangaroo · Walking</strong>
+                <span>Simulation · 0.5× playback</span>
+              </span>
+              <button class="loop-toggle" type="button" aria-label="Play co-designed Kangaroo walking">
+                <span class="loop-icon" aria-hidden="true">▶</span>
+                <span class="loop-action">Play clip</span>
+              </button>
+            </figcaption>
+          </figure>
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">Robot co-design</span>
+              <span class="venue-note">Work in progress</span>
+            </p>
+            <h3>Designing the robot around its motion.</h3>
+            <p>
+              A robot’s shape and actuation influence the movements it can
+              perform. This research explores robot design and motion together,
+              with the aim of creating robots better suited to their tasks.
+            </p>
+            <p>
+              The clip shows a walking trajectory for an optimised Kangaroo
+              model, with its leg mechanisms visible as it takes each step.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section
         id="publications"
         class="section publications-section"
         aria-labelledby="publications-title"
@@ -324,7 +503,7 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">02 / Publications</p>
+              <p class="eyebrow">03 / Publications</p>
               <h2 id="publications-title">Ideas, written down.</h2>
             </div>
             <p class="section-intro">
@@ -514,7 +693,7 @@
       >
         <div class="section-heading">
           <div>
-            <p class="eyebrow">03 / Research software</p>
+            <p class="eyebrow">04 / Research software</p>
             <h2 id="software-title">Methods you can<br /><em>build on.</em></h2>
           </div>
           <p class="section-intro">
@@ -607,7 +786,7 @@
             <p>Based in Edinburgh, UK.<br />Previously Barcelona and Delft.</p>
           </div>
           <div class="about-copy">
-            <p class="eyebrow">04 / A little background</p>
+            <p class="eyebrow">05 / A little background</p>
             <h2 id="about-title">
               Curious about the maths.<br /><em>Hands-on with the robot.</em>
             </h2>
@@ -643,7 +822,7 @@
       <section id="contact" class="contact-section">
         <div class="container contact-grid">
           <div>
-            <p class="eyebrow">05 / Let’s connect</p>
+            <p class="eyebrow">06 / Let’s connect</p>
             <h2>Good research starts<br />with a <em>conversation.</em></h2>
           </div>
           <div class="contact-actions">

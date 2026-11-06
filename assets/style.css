@@ -602,6 +602,40 @@ p + p {
   margin-top: 23px;
   flex-wrap: wrap;
 }
+.progress-section {
+  border-top: 1px solid var(--line);
+}
+.progress-media {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+.progress-comparison .loop-video {
+  aspect-ratio: 3 / 1;
+}
+.progress-clip {
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.progress-clip .loop-video {
+  background: var(--white);
+}
+.clip-description {
+  min-width: 0;
+  line-height: 1.5;
+}
+.clip-description strong,
+.clip-description > span {
+  display: block;
+}
+.clip-description strong {
+  font-weight: 600;
+}
+.clip-description > span {
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 3px;
+}
 .publications-section {
   background: #edf1e9;
   border-block: 1px solid var(--line);
@@ -1307,6 +1341,7 @@ body.dialog-open {
   .site-header,
   .hero-visual,
   .research-image,
+  .progress-media,
   .contact-section,
   .site-footer,
   .hero-actions,
