@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#143d36" />
+    <title>Sergi Martínez — Robotics Researcher</title>
+    <meta
+      name="description"
+      content="Sergi Martínez is a robotics researcher working on system identification, contact dynamics and optimal control. Explore research, publications, software and robot experiments."
+    />
+    <link rel="canonical" href="https://sergim96.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sergi Martínez — Robotics Researcher" />
+    <meta
+      property="og:description"
+      content="Physically consistent models. More capable robots. Research in system identification, dynamics and optimal control."
+    />
+    <meta property="og:url" content="https://sergim96.github.io/" />
+    <meta
+      property="og:image"
+      content="https://sergim96.github.io/assets/images/system-identification.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sergi Martínez",
+        "url": "https://sergim96.github.io/",
+        "image": "https://sergim96.github.io/assets/images/sergi-martinez.png",
+        "jobTitle": "Robotics PhD researcher",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Heriot-Watt University"
+        },
+        "sameAs": [
+          "https://github.com/Sergim96",
+          "https://www.linkedin.com/in/sergi-mart%C3%ADnez-s%C3%A1nchez-69360b156",
+          "https://www.romilab.org/team/sergi-martinez"
+        ],
+        "knowsAbout": [
+          "System identification",
+          "Robot dynamics",
+          "Optimal control",
+          "Robotic manipulation"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#home" aria-label="Sergi Martínez, home"
+          ><span class="brand-mark" aria-hidden="true">s<span>m</span>.</span
+          ><span>Sergi Martínez</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span aria-hidden="true">＋</span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="#research">Research</a
+          ><a href="#publications">Publications</a
+          ><a href="#software">Software</a><a href="#about">About</a>
+          <a class="nav-contact" href="#contact"
+            >Let’s talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> Robotics
+            researcher · Edinburgh, UK
+          </p>
+          <h1 id="hero-title">
+            Better robot models.<br /><em>More capable robots.</em>
+          </h1>
+          <p class="hero-intro">
+            I’m Sergi, a PhD researcher at Heriot-Watt University. I develop
+            physically consistent models and estimation methods for robots that
+            move, make contact and manipulate.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#research"
+              >Explore my research <span aria-hidden="true">↓</span></a
+            ><a
+              class="text-link"
+              href="assets/Sergi-Martinez-CV.pdf"
+              target="_blank"
+              rel="noopener"
+              >Download CV <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-affiliation">
+            <span class="affiliation-line" aria-hidden="true"></span>
+            <p>
+              <a href="https://www.romilab.org/" target="_blank" rel="noopener"
+                >Robot Motor Intelligence Lab</a
+              ><br /><span
+                >System identification · Dynamics · Optimal control</span
+              >
+            </p>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <div class="visual-topline">
+            <span>From theory to hardware</span
+            ><span class="index-label">01 / FIELD NOTES</span>
+          </div>
+          <div class="robot-stage">
+            <span class="orbit orbit-one" aria-hidden="true"></span
+            ><span class="orbit orbit-two" aria-hidden="true"></span
+            ><img
+              src="assets/images/b1-z1.png"
+              alt="Unitree B1 quadruped with a Z1 arm, showing the arm’s motion during a manipulation experiment"
+              width="532"
+              height="650"
+              fetchpriority="high"
+            /><span class="visual-coordinate" aria-hidden="true"
+              >x / y / z</span
+            >
+          </div>
+          <figcaption>
+            <div>
+              <strong>Understanding the physics of motion</strong
+              ><span>Unitree B1 + Z1 · System identification</span>
+            </div>
+            <a
+              class="play-link"
+              href="https://youtu.be/ToTYp7mCkOQ"
+              data-video="ToTYp7mCkOQ"
+              aria-label="Watch system identification research video"
+              ><span aria-hidden="true">▶</span></a
+            >
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="research-strip">
+        <div class="container strip-inner">
+          <span class="strip-label">My work connects</span
+          ><span>Physical modelling</span
+          ><span class="strip-plus" aria-hidden="true">+</span
+          ><span>Numerical optimisation</span
+          ><span class="strip-plus" aria-hidden="true">+</span
+          ><span>Real robot experiments</span>
+        </div>
+      </div>
+
+      <section
+        id="research"
+        class="section container"
+        aria-labelledby="research-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Selected research</p>
+            <h2 id="research-title">
+              Making models work<br /><em>in the physical world.</em>
+            </h2>
+          </div>
+          <p class="section-intro">
+            My research brings dynamics, estimation and control together to
+            identify what a robot is doing—and the physical parameters that
+            explain its motion.
+          </p>
+        </div>
+        <article class="research-feature">
+          <a
+            class="research-image"
+            href="https://youtu.be/ToTYp7mCkOQ"
+            data-video="ToTYp7mCkOQ"
+            aria-label="Watch constrained system identification experiments"
+            ><img
+              src="assets/images/system-identification.png"
+              alt="A Unitree B1 robot stepping onto a platform, with a visualisation of its internal leg mechanism"
+              width="480"
+              height="285"
+              loading="lazy"
+            /><span class="image-video-label"
+              ><span aria-hidden="true">▶</span> Watch experiments</span
+            ></a
+          >
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">System identification</span
+              ><span class="venue-note">T-RO · Conditionally accepted</span>
+            </p>
+            <h3>Learning the robot’s physics, under real constraints.</h3>
+            <p>
+              I developed a Bayesian framework to jointly estimate robot states,
+              inertial parameters and friction while respecting contacts and
+              closed kinematic loops. A structured solver keeps the backward
+              pass linear in the trajectory horizon.
+            </p>
+            <p>
+              Experiments on a B1 with a Z1 arm connect the identified models to
+              better end-effector tracking and contact-rich motion.
+            </p>
+            <div class="research-result">
+              <strong>≈50%</strong>
+              <p>
+                lower friction-parameter error with energy observations in a
+                biped and quadruped simulation ablation.<span
+                  >100 random initialisations per model; compared with the same
+                  estimator without energy observations.</span
+                >
+              </p>
+            </div>
+            <a
+              class="text-link"
+              href="https://arxiv.org/abs/2602.16358"
+              target="_blank"
+              rel="noopener"
+              >Read the paper <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <article class="research-feature research-feature-reverse">
+          <div class="research-image research-image-light">
+            <img
+              src="assets/images/multi-contact.png"
+              alt="A simulated Talos humanoid moving along monkey bars while identifying an unknown payload"
+              width="2534"
+              height="1570"
+              loading="lazy"
+            /><span class="image-caption"
+              >Multi-contact estimation · Humanoid simulation</span
+            >
+          </div>
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">State &amp; parameter estimation</span
+              ><span class="venue-note">RA-L · 2025</span>
+            </p>
+            <h3>Estimating the payload.<br />Localising the robot.</h3>
+            <p>
+              Multiple contacts make localisation and payload identification
+              tightly coupled. I developed a multiple-shooting estimator with
+              physically consistent inertial parameters and analytical
+              contact-dynamics derivatives.
+            </p>
+            <p>
+              The framework was evaluated against least-squares estimation,
+              tested on demanding simulated motions and validated in experiments
+              on a Go1 quadruped.
+            </p>
+            <div class="inline-links">
+              <a
+                class="text-link"
+                href="https://doi.org/10.1109/LRA.2025.3550845"
+                target="_blank"
+                rel="noopener"
+                >Read the paper <span aria-hidden="true">↗</span></a
+              ><a
+                class="text-link"
+                href="https://youtu.be/nDOxTgeK_5o"
+                data-video="nDOxTgeK_5o"
+                >Watch video <span aria-hidden="true">▶</span></a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        id="publications"
+        class="section publications-section"
+        aria-labelledby="publications-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Publications</p>
+              <h2 id="publications-title">Ideas, written down.</h2>
+            </div>
+            <p class="section-intro">
+              Selected papers on estimation, numerical optimisation and control.
+              My name is highlighted in each author list.
+            </p>
+          </div>
+          <div class="publication-list">
+            <article class="publication" id="pub-sysid">
+              <span class="publication-year">2026</span>
+              <div class="publication-body">
+                <p class="publication-status">
+                  <span class="status-pill">T-RO · Conditionally accepted</span
+                  ><span>First author</span>
+                </p>
+                <h3>
+                  <a
+                    href="https://arxiv.org/abs/2602.16358"
+                    target="_blank"
+                    rel="noopener"
+                    >System Identification under Constraints and Disturbance: A
+                    Bayesian Estimation Approach</a
+                  >
+                </h3>
+                <p class="authors">
+                  <strong>Sergi Martinez</strong>, Steve Tonneau, Carlos
+                  Mastalli
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2602.16358"
+                    target="_blank"
+                    rel="noopener"
+                    >Paper ↗</a
+                  ><a
+                    href="https://youtu.be/ToTYp7mCkOQ"
+                    data-video="ToTYp7mCkOQ"
+                    >Video ▶</a
+                  ><button type="button" data-citation="sysid">
+                    Cite <span aria-hidden="true">＋</span>
+                  </button>
+                </div>
+                <details>
+                  <summary>Research summary</summary>
+                  <p>
+                    Joint state and physical-parameter estimation with inverse
+                    dynamics, contact and loop-closure constraints, friction
+                    models and energy observations. Validated in simulation and
+                    on a Unitree B1 with a Z1 arm.
+                  </p>
+                </details>
+              </div>
+            </article>
+            <article class="publication" id="pub-ral">
+              <span class="publication-year">2025</span>
+              <div class="publication-body">
+                <p class="publication-status">
+                  <span class="status-pill status-published"
+                    >RA-L · Published</span
+                  ><span>First author</span>
+                </p>
+                <h3>
+                  <a
+                    href="https://doi.org/10.1109/LRA.2025.3550845"
+                    target="_blank"
+                    rel="noopener"
+                    >Multi-Contact Inertial Parameters Estimation and
+                    Localization in Legged Robots</a
+                  >
+                </h3>
+                <p class="authors">
+                  <strong>Sergi Martinez</strong>, Robert J. Griffin, Carlos
+                  Mastalli
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://doi.org/10.1109/LRA.2025.3550845"
+                    target="_blank"
+                    rel="noopener"
+                    >Paper ↗</a
+                  ><a
+                    href="https://youtu.be/nDOxTgeK_5o"
+                    data-video="nDOxTgeK_5o"
+                    >Video ▶</a
+                  ><button type="button" data-citation="ral">
+                    Cite <span aria-hidden="true">＋</span>
+                  </button>
+                </div>
+                <details>
+                  <summary>Research summary</summary>
+                  <p>
+                    A structured optimal estimator for robot localisation and
+                    payload inertial parameters during multi-contact motion,
+                    combining a physically consistent inertial manifold,
+                    parametrised Riccati recursion and analytical derivatives.
+                  </p>
+                </details>
+              </div>
+            </article>
+            <article class="publication" id="pub-icra">
+              <span class="publication-year">2025</span>
+              <div class="publication-body">
+                <p class="publication-status">
+                  <span class="status-pill status-published"
+                    >ICRA · Published</span
+                  >
+                </p>
+                <h3>
+                  <a
+                    href="https://ieeexplore.ieee.org/document/11128064"
+                    target="_blank"
+                    rel="noopener"
+                    >Endpoint-Explicit Differential Dynamic Programming via
+                    Exact Resolution</a
+                  >
+                </h3>
+                <p class="authors">
+                  M. Parilli, <strong>Sergi Martinez</strong>, Carlos Mastalli
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://ieeexplore.ieee.org/document/11128064"
+                    target="_blank"
+                    rel="noopener"
+                    >Paper ↗</a
+                  ><a
+                    href="https://youtu.be/RBohdOhgbWw"
+                    data-video="RBohdOhgbWw"
+                    >Video ▶</a
+                  ><button type="button" data-citation="icra">
+                    Cite <span aria-hidden="true">＋</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="publication" id="pub-odyn">
+              <span class="publication-year">2026</span>
+              <div class="publication-body">
+                <p class="publication-status">
+                  <span class="status-pill status-review"
+                    >T-RO submission · Under review</span
+                  >
+                </p>
+                <h3>
+                  <a
+                    href="https://arxiv.org/abs/2602.16005"
+                    target="_blank"
+                    rel="noopener"
+                    >ODYN: An All-Shifted Non-Interior-Point Method for
+                    Quadratic Programming in Robotics and AI</a
+                  >
+                </h3>
+                <p class="authors">
+                  Jose Rojas, Aristotelis Papatheodorou,
+                  <strong>Sergi Martinez</strong>, Andrea Patrizi, Ioannis
+                  Havoutis, Carlos Mastalli
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2602.16005"
+                    target="_blank"
+                    rel="noopener"
+                    >Preprint ↗</a
+                  ><button type="button" data-citation="odyn">
+                    Cite <span aria-hidden="true">＋</span>
+                  </button>
+                </div>
+                <details>
+                  <summary>Research summary</summary>
+                  <p>
+                    A quadratic programming solver for challenging optimisation
+                    problems in robotics and AI, with applications to predictive
+                    control, differentiable optimisation layers and contact
+                    simulation.
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="software"
+        class="section container"
+        aria-labelledby="software-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Research software</p>
+            <h2 id="software-title">Methods you can<br /><em>build on.</em></h2>
+          </div>
+          <p class="section-intro">
+            I work mainly in C++ and Python, turning dynamics and optimisation
+            methods into reusable research software.
+          </p>
+        </div>
+        <div class="software-list">
+          <article class="software-item">
+            <span class="software-number">01</span>
+            <div>
+              <h3>Crocoddyl</h3>
+              <p>
+                Parameter-aware dynamics, costs, constraints and observers for
+                joint state and physical-parameter estimation, with analytical
+                derivatives and solver tests.
+              </p>
+              <span class="software-meta"
+                >C++ / Python · Public draft contribution</span
+              >
+            </div>
+            <a
+              class="round-link"
+              href="https://github.com/loco-3d/crocoddyl/pull/1525"
+              target="_blank"
+              rel="noopener"
+              aria-label="View Crocoddyl draft pull request 1525"
+              >↗</a
+            >
+          </article>
+          <article class="software-item">
+            <span class="software-number">02</span>
+            <div>
+              <h3>ODYN</h3>
+              <p>
+                Contributions to differentiable QP layers, code generation,
+                solver testing and performance-oriented C++ for robotics and
+                learning.
+              </p>
+              <span class="software-meta"
+                >Numerical optimisation · Co-authored research</span
+              >
+            </div>
+            <a
+              class="round-link"
+              href="https://arxiv.org/abs/2602.16005"
+              target="_blank"
+              rel="noopener"
+              aria-label="Read the ODYN research paper"
+              >↗</a
+            >
+          </article>
+          <article class="software-item">
+            <span class="software-number">03</span>
+            <div>
+              <h3>GeneSys</h3>
+              <p>
+                Contributions to differentiable contact-dynamics simulation and
+                its integration with optimisation and control.
+              </p>
+              <span class="software-meta"
+                >Differentiable simulation · Research collaboration</span
+              >
+            </div>
+          </article>
+        </div>
+        <a
+          class="text-link software-github"
+          href="https://github.com/Sergim96"
+          target="_blank"
+          rel="noopener"
+          >Find me on GitHub <span aria-hidden="true">↗</span></a
+        >
+      </section>
+
+      <section
+        id="about"
+        class="section about-section"
+        aria-labelledby="about-title"
+      >
+        <div class="container about-grid">
+          <div class="about-portrait">
+            <img
+              src="assets/images/sergi-martinez.png"
+              alt="Portrait of Sergi Martínez"
+              width="539"
+              height="501"
+              loading="lazy"
+            />
+            <p>Based in Edinburgh, UK.<br />Previously Barcelona and Delft.</p>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">04 / A little background</p>
+            <h2 id="about-title">
+              Curious about the maths.<br /><em>Hands-on with the robot.</em>
+            </h2>
+            <p>
+              I’m a PhD researcher in the
+              <a href="https://www.romilab.org/" target="_blank" rel="noopener"
+                >Robot Motor Intelligence Lab</a
+              >
+              at Heriot-Watt University, supervised by Carlos Mastalli. My work
+              sits at the intersection of physical modelling, numerical
+              optimisation and robot experiments.
+            </p>
+            <p>
+              Before my PhD, I developed C++/ROS software and integrated sensors
+              and hardware for cloth manipulation at IRI (CSIC–UPC). I also
+              designed and tested a dynamically balanced compliant mechanism
+              during a research internship at TU Delft.
+            </p>
+            <p>
+              I hold an MSc in Automatic Control and Robotics from UPC and
+              degrees in Mechatronics Engineering and Industrial Electronics
+              Engineering and Automation from UVic-UCC.
+            </p>
+            <div class="about-facts">
+              <div>
+                <span>Doctoral milestone</span
+                ><strong>Viva · 16 November 2026</strong>
+              </div>
+              <div>
+                <span>Current availability</span
+                ><strong>Available to start immediately</strong>
+              </div>
+            </div>
+            <div class="recognition">
+              <h3>Recognition</h3>
+              <p><span>2025</span> EPS Postgraduate Research 2nd Year Prize</p>
+              <p><span>2019</span> Second-best paper award · ICCMA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">05 / Let’s connect</p>
+            <h2>Good research starts<br />with a <em>conversation.</em></h2>
+            <p>
+              I’m interested in postdoctoral research and robotics opportunities
+              involving system identification, dynamics, optimisation and
+              control.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-email" href="mailto:sergi.saya96@gmail.com"
+              >sergi.saya96@gmail.com <span aria-hidden="true">↗</span></a
+            >
+            <div class="contact-socials">
+              <a
+                href="https://github.com/Sergim96"
+                target="_blank"
+                rel="noopener"
+                >GitHub ↗</a
+              ><a
+                href="https://www.linkedin.com/in/sergi-mart%C3%ADnez-s%C3%A1nchez-69360b156"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn ↗</a
+              ><a
+                href="assets/Sergi-Martinez-CV.pdf"
+                target="_blank"
+                rel="noopener"
+                >Curriculum vitae ↗</a
+              >
+            </div>
+            <p class="contact-location">
+              <span class="status-dot" aria-hidden="true"></span> Edinburgh,
+              United Kingdom
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="wordmark" href="#home">Sergi Martínez</a>
+      <p>Robotics, from models to motion.</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+    <dialog
+      id="video-dialog"
+      class="media-dialog"
+      aria-labelledby="video-title"
+    >
+      <div class="dialog-top">
+        <h2 id="video-title">Research in motion</h2>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close="video-dialog"
+          aria-label="Close video"
+        >
+          ×
+        </button>
+      </div>
+      <div id="video-player" class="video-player"></div>
+      <p>
+        <a
+          id="video-external"
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener"
+          >Watch on YouTube ↗</a
+        >
+      </p>
+    </dialog>
+    <dialog
+      id="citation-dialog"
+      class="citation-dialog"
+      aria-labelledby="citation-title"
+    >
+      <div class="dialog-top">
+        <h2 id="citation-title">Cite this work</h2>
+        <button
+          class="dialog-close"
+          type="button"
+          data-close="citation-dialog"
+          aria-label="Close citation"
+        >
+          ×
+        </button>
+      </div>
+      <pre id="citation-text" tabindex="0"></pre>
+      <div class="citation-actions">
+        <button id="copy-citation" class="button button-dark" type="button">
+          Copy BibTeX</button
+        ><span id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+    </dialog>
+  </body>
+</html>
