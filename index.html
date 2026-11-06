@@ -450,7 +450,56 @@
           </div>
         </article>
 
-        <article class="research-feature">
+        <article class="research-feature" id="talos-reaching" aria-labelledby="talos-title">
+          <figure class="research-image experiment-loop progress-clip">
+            <video
+              class="loop-video"
+              src="assets/videos/talos-reaching-steps.mp4"
+              data-loop-label="Talos stepping to reach a gripper target"
+              poster="assets/images/talos-reaching-steps-poster.jpg"
+              width="1280"
+              height="720"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Exploratory simulation of Talos discovering a stepping motion to bring its right gripper to a fixed gold target, without predefined footsteps"
+            ></video>
+            <figcaption class="loop-toolbar">
+              <span class="clip-description">
+                <strong>Talos · Stepping to reach</strong>
+                <span>Exploratory simulation · 0.5× playback</span>
+              </span>
+              <button class="loop-toggle" type="button" aria-label="Play Talos stepping to reach a gripper target">
+                <span class="loop-icon" aria-hidden="true">▶</span>
+                <span class="loop-action">Play clip</span>
+              </button>
+            </figcaption>
+          </figure>
+          <div class="research-copy">
+            <p class="tag-line">
+              <span class="tag">Locomotion &amp; reaching</span>
+              <span class="venue-note">Work in progress</span>
+            </p>
+            <h3 id="talos-title">Finding steps to reach a target.</h3>
+            <p>
+              Talos is given a gripper-position target, with no predefined
+              footsteps or walking sequence. The resulting motion combines
+              stepping and changes in posture to bring its right hand towards
+              the goal.
+            </p>
+            <p>
+              This research explores how robots can discover coordinated
+              locomotion and reaching behaviours from a task goal. The gold
+              marker shows the gripper target.
+            </p>
+            <p class="venue-note">
+              Exploratory simulation; hardware limits are not enforced.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-feature research-feature-reverse">
           <figure class="research-image experiment-loop progress-clip">
             <video
               class="loop-video"
