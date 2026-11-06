@@ -115,29 +115,39 @@
             </p>
           </div>
         </div>
-        <figure class="hero-visual">
+        <figure class="hero-visual experiment-loop">
           <div class="visual-topline">
             <span>From theory to hardware</span
             ><span class="index-label">01 / FIELD NOTES</span>
           </div>
           <div class="robot-stage">
-            <span class="orbit orbit-one" aria-hidden="true"></span
-            ><span class="orbit orbit-two" aria-hidden="true"></span
-            ><img
-              src="assets/images/b1-z1.png"
-              alt="Unitree B1 quadruped with a Z1 arm, showing the arm’s motion during a manipulation experiment"
-              width="532"
-              height="650"
-              fetchpriority="high"
-            /><span class="visual-coordinate" aria-hidden="true"
-              >x / y / z</span
-            >
+            <video
+              class="loop-video"
+              src="assets/videos/b1-z1-stairs.mp4"
+              data-loop-label="B1/Z1 stair-climbing clip"
+              poster="assets/images/b1-z1-stairs-poster.jpg"
+              width="960"
+              height="540"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Silent looping experiment: a Unitree B1 with a Z1 arm climbing stairs"
+            ></video>
           </div>
           <figcaption>
             <div>
               <strong>Understanding the physics of motion</strong
-              ><span>Unitree B1 + Z1 · System identification</span>
+              ><span>Unitree B1 + Z1 · Stair-climbing experiment</span>
             </div>
+            <button
+              class="loop-toggle"
+              type="button"
+              aria-label="Play experiment clip"
+            >
+              <span class="loop-icon" aria-hidden="true">▶</span>
+              <span class="loop-action">Play clip</span>
+            </button>
             <a
               class="play-link"
               href="https://youtu.be/ToTYp7mCkOQ"
@@ -179,21 +189,34 @@
           </p>
         </div>
         <article class="research-feature">
-          <a
-            class="research-image"
-            href="https://youtu.be/ToTYp7mCkOQ"
-            data-video="ToTYp7mCkOQ"
-            aria-label="Watch constrained system identification experiments"
-            ><img
-              src="assets/images/system-identification.png"
-              alt="A Unitree B1 robot stepping onto a platform, with a visualisation of its internal leg mechanism"
-              width="480"
-              height="285"
-              loading="lazy"
-            /><span class="image-video-label"
-              ><span aria-hidden="true">▶</span> Watch experiments</span
-            ></a
-          >
+          <div class="research-image experiment-loop">
+            <video
+              class="loop-video"
+              src="assets/videos/b1-walking.mp4"
+              data-loop-label="B1 walking clip"
+              poster="assets/images/b1-walking-poster.jpg"
+              width="960"
+              height="540"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Silent looping experiment: a Unitree B1 walking with an identified dynamics model"
+            ></video>
+            <div class="loop-toolbar">
+              <a href="https://youtu.be/ToTYp7mCkOQ" data-video="ToTYp7mCkOQ"
+                >Full video ↗</a
+              >
+              <button
+                class="loop-toggle"
+                type="button"
+                aria-label="Play experiment clip"
+              >
+                <span class="loop-icon" aria-hidden="true">▶</span>
+                <span class="loop-action">Play clip</span>
+              </button>
+            </div>
+          </div>
           <div class="research-copy">
             <p class="tag-line">
               <span class="tag">System identification</span
@@ -230,16 +253,33 @@
           </div>
         </article>
         <article class="research-feature research-feature-reverse">
-          <div class="research-image research-image-light">
-            <img
-              src="assets/images/multi-contact.png"
-              alt="A simulated Talos humanoid moving along monkey bars while identifying an unknown payload"
-              width="2534"
-              height="1570"
-              loading="lazy"
-            /><span class="image-caption"
-              >Multi-contact estimation · Humanoid simulation</span
-            >
+          <div class="research-image research-image-light experiment-loop">
+            <video
+              class="loop-video"
+              src="assets/videos/go1-estimation.mp4"
+              data-loop-label="Go1 estimation clip"
+              poster="assets/images/go1-estimation-poster.jpg"
+              width="960"
+              height="540"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-label="Silent looping Go1 jumping experiment comparing the proposed state estimator with an extended Kalman filter"
+            ></video>
+            <div class="loop-toolbar">
+              <a href="https://youtu.be/nDOxTgeK_5o" data-video="nDOxTgeK_5o"
+                >Full video ↗</a
+              >
+              <button
+                class="loop-toggle"
+                type="button"
+                aria-label="Play experiment clip"
+              >
+                <span class="loop-icon" aria-hidden="true">▶</span>
+                <span class="loop-action">Play clip</span>
+              </button>
+            </div>
           </div>
           <div class="research-copy">
             <p class="tag-line">
@@ -591,16 +631,6 @@
               degrees in Mechatronics Engineering and Industrial Electronics
               Engineering and Automation from UVic-UCC.
             </p>
-            <div class="about-facts">
-              <div>
-                <span>Doctoral milestone</span
-                ><strong>Viva · 16 November 2026</strong>
-              </div>
-              <div>
-                <span>Current availability</span
-                ><strong>Available to start immediately</strong>
-              </div>
-            </div>
             <div class="recognition">
               <h3>Recognition</h3>
               <p><span>2025</span> EPS Postgraduate Research 2nd Year Prize</p>

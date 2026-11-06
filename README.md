@@ -11,13 +11,16 @@ Website: https://sergim96.github.io/
 - `assets/site.js`: navigation, research video dialogs, BibTeX entries and citation copying.
 - `assets/Sergi-Martinez-CV.pdf`: downloadable CV. Replace this file when the CV changes.
 - `assets/images/`: portrait and research figures.
+- `assets/videos/`: short, silent experiment loops with matching poster images.
 - `sitemap.xml`: update `lastmod` after substantive content changes.
 
 Publication titles and author names are written directly into the HTML so the research remains readable and indexable without JavaScript. Research videos load from YouTube’s privacy-enhanced domain only after a visitor chooses to watch. There are no analytics, cookies set by this site, contact-form services or tracking scripts.
 
 When a publication’s status changes, update its status in `index.html` and its BibTeX note in `assets/site.js`. The SysID paper is **conditionally accepted**, while ODYN is **under review**. The Crocoddyl estimation contribution is linked as a **draft pull request**.
 
-The viva date, immediate availability and institutional affiliation reflect information supplied on 6 November 2026; update these after the viva or when circumstances change. Internship dates are omitted from the web biography. The downloadable CV retains the dates supplied by its author.
+The institutional affiliation reflects information supplied on 6 November 2026. Internship dates are omitted from the web biography. The downloadable CV retains the details supplied by its author.
+
+Experiment loops load and play only when their panel is visible. Each has a pause/play control. Videos pause when the tab is hidden or a dialog is open; visitors who prefer reduced motion see the poster until they choose to play. Full YouTube videos remain available separately.
 
 ## Preview locally
 
@@ -44,5 +47,6 @@ All public-site content is in this repository; it does not require access to pri
 - The approximately 50% friction-error reduction is from the SysID paper’s Section IX-D, Table I: energy-observation ablation in the biped and quadruped simulation models, averaged over 100 random initialisations per model. It is not a hardware performance claim.
 - RA-L publication metadata: [DOI 10.1109/LRA.2025.3550845](https://doi.org/10.1109/LRA.2025.3550845).
 - Crocoddyl contribution: [public draft PR #1525](https://github.com/loco-3d/crocoddyl/pull/1525).
+- Experiment loops: excerpts from the author’s original SysID publication video (stair climbing, 338–345 seconds; walking, 294–301 seconds) and the Go1 jumping comparison footage used in the multi-contact estimation publication video. The excerpts retain the source footage’s experiment-speed labels; audio and non-video metadata have been removed. Clips are encoded as 960-pixel H.264 MP4 at 24 fps, with fast-start metadata for browser playback.
 
 Research photographs and figures retain their original authorship and applicable rights. This repository does not grant an additional licence to redistribute the research imagery or portrait. The favicon and site layout were created for this website.

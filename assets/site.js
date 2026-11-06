@@ -32,6 +32,94 @@ const videoPlayer = document.querySelector("#video-player");
 const citationDialog = document.querySelector("#citation-dialog");
 const citationText = document.querySelector("#citation-text");
 const copyStatus = document.querySelector("#copy-status");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const experimentLoops = [...document.querySelectorAll(".experiment-loop")].map(
+  (container) => {
+    const video = container.querySelector(".loop-video");
+    const toggle = container.querySelector(".loop-toggle");
+    const item = {
+      container,
+      video,
+      toggle,
+      name: video.dataset.loopLabel,
+      visible: false,
+      userPaused: false,
+      userRequested: false,
+    };
+    // The visibility controller decides when to load and play each silent loop.
+    video.autoplay = false;
+    video.muted = true;
+    video.defaultMuted = true;
+    const updateControl = () => {
+      const playing = !video.paused;
+      toggle.querySelector(".loop-icon").textContent = playing ? "Ⅱ" : "▶";
+      toggle.querySelector(".loop-action").textContent = playing
+        ? "Pause"
+        : "Play clip";
+      toggle.setAttribute(
+        "aria-label",
+        `${playing ? "Pause" : "Play"} ${item.name}`,
+      );
+    };
+    video.addEventListener("play", updateControl);
+    video.addEventListener("pause", updateControl);
+    toggle.addEventListener("click", () => {
+      item.userPaused = !video.paused;
+      item.userRequested = !item.userPaused;
+      syncExperimentLoops();
+    });
+    updateControl();
+    return item;
+  },
+);
+
+function syncExperimentLoops() {
+  const dialogOpen = document.querySelector("dialog[open]") !== null;
+  for (const item of experimentLoops) {
+    const shouldPlay =
+      item.visible &&
+      !document.hidden &&
+      !dialogOpen &&
+      !item.userPaused &&
+      (!reducedMotion.matches || item.userRequested);
+    if (shouldPlay) {
+      item.video.play().catch(() => {
+        // Autoplay restrictions leave the poster and manual play control available.
+      });
+    } else {
+      item.video.pause();
+    }
+  }
+}
+
+if ("IntersectionObserver" in window) {
+  const loopObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const item = experimentLoops.find(
+          (loop) => loop.container === entry.target,
+        );
+        item.visible = entry.isIntersecting;
+      }
+      syncExperimentLoops();
+    },
+    { threshold: 0.1 },
+  );
+  experimentLoops.forEach((item) => loopObserver.observe(item.container));
+} else {
+  experimentLoops.forEach((item) => {
+    item.visible = true;
+  });
+  syncExperimentLoops();
+}
+document.addEventListener("visibilitychange", syncExperimentLoops);
+reducedMotion.addEventListener("change", () => {
+  experimentLoops.forEach((item) => {
+    item.userRequested = false;
+  });
+  syncExperimentLoops();
+});
+
 const citations = {
   sysid: `@misc{martinez2026systemidentification,
   title = {System Identification under Constraints and Disturbance: A Bayesian Estimation Approach},
@@ -88,6 +176,7 @@ if (typeof videoDialog.showModal === "function") {
       videoPlayer.replaceChildren(frame);
       document.querySelector("#video-external").href = link.href;
       videoDialog.showModal();
+      syncExperimentLoops();
       document.body.classList.add("dialog-open");
     });
   });
@@ -99,6 +188,7 @@ document.querySelectorAll("[data-citation]").forEach((button) => {
     copyStatus.textContent = "";
     if (typeof citationDialog.showModal === "function") {
       citationDialog.showModal();
+      syncExperimentLoops();
       document.body.classList.add("dialog-open");
     } else {
       citationDialog.setAttribute("open", "");
@@ -117,6 +207,7 @@ document.querySelectorAll("[data-close]").forEach((button) => {
   dialog.addEventListener("close", () => {
     if (dialog === videoDialog) videoPlayer.replaceChildren();
     document.body.classList.remove("dialog-open");
+    syncExperimentLoops();
   });
   dialog.addEventListener("click", (event) => {
     const box = dialog.getBoundingClientRect();
